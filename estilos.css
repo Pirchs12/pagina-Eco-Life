@@ -1,0 +1,238 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url(imagenes/fondo1.png);
+	line-height: 1.5em;
+	
+	padding-top: 80px; /* Relleno superior igual a la altura de la cabecera*/
+}
+
+h1 {
+	font-family: AR BLANCA;
+	font-size: 3em;
+	text-align: center;
+	font-weight: 300;
+	color: #666;
+}
+
+p {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	margin: 0 0 1.5em 0;
+}
+
+.slider {
+	width: 100%;
+	height: 500px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+	height: 500px;
+}
+
+@keyframes cambio {
+	0%  {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+/*Estas líneas de CSS las usaremos para dar estilo a la cabecera:*/
+
+#main-header {
+	background: #154360 ;
+	color: white;
+	height: 80px;
+	
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+	#main-header a {
+		color: white;
+	}
+
+/*
+ * Logo
+ */
+#logo-header {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+}
+	#logo-header:hover {
+		color: #7DCEA0;
+	}
+	
+	#logo-header .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+img{
+margin-right: 10px;
+	}
+
+/*
+ * Navegación
+ */
+nav {
+	float: right;
+	font-family: Helvetica, Arial, sans-serif;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 50px;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 80px;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+			}
+			
+				nav ul li a:hover {
+					background: #7FB3D5 ;
+				}
+/*Con estos estilos aplicaremos diseño al contenido:*/
+
+
+
+#main-content {
+	background: white;
+	color: #666;
+	width: 90%;
+	max-width: 1100px;
+	margin: 20px auto;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+	border-radius: 3px;
+}
+
+	#main-content header,
+	#main-content .content {
+		padding: 40px;
+	}
+
+/*Y por último, con esto estilizaremos el pie de página:*/
+
+#main-footer {
+	background: #154360;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+}
+	#main-footer p {
+		margin: 0;
+	}
+
+#contenido{
+	background: white;
+	width: 90%;
+	max-width: 1100px;
+	margin: 20px auto;
+	box-shadow: 0 0 10px;
+	padding-top: 40px;
+}
+
+#contenido div{
+	width: 300px;
+	height: 400px;
+	display: inline-block;
+	text-align: center;	
+	margin-left: 35px;
+	padding-top: 25px;
+	padding-right: 15px;
+	overflow: hidden;
+}
+#contenido p{
+	font-family: Bahnschrift;
+	font-size: 13px;
+	color: black;
+}
+h4{
+	color: black;
+	text-align: center;
+
+}
+#contenido .barra{
+	width: 100%;
+}
+#contenido3{
+	background: white;
+	color: #666;
+	width: 90%;
+	max-width: 1100px;
+	margin: 20px auto;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+	border-radius: 3px;
+	margin-top: 40px;
+	padding-top: 40px;
+}
+#contenido3 .barra{
+	width: 100%;
+}
+#contenido3 .inf{
+	padding: 40px;
+}
+#contenido3 img{
+	display: inline;
+}
+
+.BotonDown{
+background:#0E6655;
+padding:5px;
+width:350px;
+height:55px;
+border-radius: 20px;
+background-size: 40px;  
+font-family: Elephant;
+font-size: 2em;
+color: white;
+}
+.BotonDown:hover {
+      background-color: #73C6B6;
+      font-family: Elephant;
+      font-size: 2em;
+
+  }
+
+
+
+
+
+
+
+
+
+
